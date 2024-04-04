@@ -1,0 +1,122 @@
+*{padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+}
+
+#btn-menu{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffff;
+  margin:20px;
+  background-color: transparent;
+  transition: 0.5s;
+  top:-1%;
+  
+  
+}
+
+
+.linha{
+  width: 30px;
+  height: 2px;
+  background-color: #ffff;
+  display: block;
+  margin: 7px auto;
+  position: relative;
+  transform-origin: content;
+  cursor: position;
+  transition: 0.2s;
+}
+
+#btn-menu.ativar .linha:nth-child(1){
+  transform: translateY(9px) rotate(-45deg);
+  background-color: red;
+}
+
+#btn-menu.ativar .linha:nth-child(2) {
+  background-color: transparent;
+  width: 0;
+  
+}
+
+#btn-menu.ativar .linha:nth-child(3) {
+  transform: translateY(-9px) rotate(45deg);
+  background-color: red;
+  
+}
+
+#btn-menu.ativar  {
+ border: 2px solid red;
+  
+}
+
+
+
+.menu{
+  background-color: #1E1D1B;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 0;
+  height: 900%;
+  visibility: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+  
+}
+
+.menu nav a{
+  color: #ffff;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 40px;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+ 
+}
+
+.menu nav a:hover{
+  background-color: #656664;
+}
+
+.dropdown{
+  display:none;
+  border-bottom: solid 1px white;
+}
+
+
+nav ul li .drop{
+  color: #ffff;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 20px;
+  padding:15px 30px 30px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.contato:hover .dropdown{
+  display:block;
+  
+}
+
+.blog:hover .dropdown{
+  display:block;
+}
+
+
+.menu.abrir{
+  visibility: visible;
+  width: 135px;
+}
+
+
+
