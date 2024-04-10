@@ -1,6 +1,7 @@
 const menu = document.getElementById('menu')
 const btn = document.getElementById('btn-menu') 
-menu.addEventListener('click', animar)
+const blog = document.getElementById('blog') 
+
 
 function animar() {
   
@@ -9,3 +10,11 @@ function animar() {
   
 }
 
+function m_abrir(){
+  if(blog.style.display == "block"){
+    blog.style.display = "none"
+  }
+else {
+  blog.style.display = "block"
+}
+}

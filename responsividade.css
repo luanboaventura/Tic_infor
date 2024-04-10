@@ -29,14 +29,19 @@
 /*mapa*/
 
 /*encontre a força natural*/
+.texto{
+ 
+}
   .texto .f {
     color: #ff3131;
     margin: 10px 5px;
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .texto h1{
     margin: 10px 5px;
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 /*encontre a força natural*/
 }

@@ -7,8 +7,24 @@ body{
   background-color: white;
 }
 
+.borda{
+  background-color: black;
+  height: 80px;
+  width: 100%;
+}
+.borda h1{
+  position: absolute;
+  color: white;
+ text-align: center;
+ transform: translate(25%,25%);
+ font-size: 45px;
+ font-family: Arial;
+
+}
+
+
 #btn-menu{
-  position: relative;
+  position: absolute;
   width: 50px;
   height: 50px;
   border: 2px solid #ffff;
@@ -16,6 +32,8 @@ body{
   background-color: transparent;
   transition: 0.5s;
   top:-1%;
+  left: 1%;
+  transform: translate(-50%);
   
   
 }
@@ -108,9 +126,6 @@ nav ul li .drop{
   
 }
 
-.blog:hover .dropdown{
-  display:block;
-}
 
 
 .menu.abrir{
