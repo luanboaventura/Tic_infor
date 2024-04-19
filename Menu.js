@@ -6,7 +6,6 @@ const blog = document.getElementById('blog')
 function animar() {
   
   menu.classList.toggle('abrir')
-  btn.classList.toggle('ativar')
   
 }
 
